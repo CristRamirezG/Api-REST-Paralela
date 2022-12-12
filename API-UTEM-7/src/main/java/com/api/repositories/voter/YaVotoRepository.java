@@ -1,8 +1,8 @@
-package com.start.repositories.voter;
+package com.api.repositories.voter;
 
 import org.springframework.stereotype.Repository;
 
-import com.start.models.voter.YaVotoModel;
+import com.api.models.voter.YaVotoModel;
 
 import org.springframework.data.repository.*;
 @Repository 

@@ -1,10 +1,10 @@
-package com.start.models.voter;
+package com.api.models.voter;
 
 import java.util.List;
 
 public class ResultStruct {
 	private String nombreEncuesta;
-	private List <String> Opciones;
+	private List <OpcionModel> Opciones;
 	
 	public String getNombreEncuesta() {
 		return nombreEncuesta;
@@ -12,10 +12,10 @@ public class ResultStruct {
 	public void setNombreEncuesta(String nombreEncuesta) {
 		this.nombreEncuesta = nombreEncuesta;
 	}
-	public List <String> getOpciones() {
+	public List <OpcionModel> getOpciones() {
 		return Opciones;
 	}
-	public void setOpciones(List <String> opciones) {
+	public void setOpciones(List <OpcionModel> opciones) {
 		Opciones = opciones;
 	}
 }

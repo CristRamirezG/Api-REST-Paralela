@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApiUtem6ApplicationTests {
+class ApiUtemJwtOauth23ApplicationTests {
 
 	@Test
 	void contextLoads() {

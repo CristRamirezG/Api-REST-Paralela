@@ -1,15 +1,15 @@
-package com.start.services.voter;
+package com.api.services.voter;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.start.models.voter.OpcionModel;
-import com.start.models.voter.PollModel;
-import com.start.repositories.voter.PollsRepository;
+
+import com.api.models.voter.PollModel;
+import com.api.repositories.voter.PollsRepository;
 
 @Service
 public class PollService {
@@ -23,4 +23,8 @@ public class PollService {
 		
 		return Poll_List;
 	}
+	public void GuardarPoll(PollModel poll) {
+		pollsrepository.save(poll);
+	}
 }
+

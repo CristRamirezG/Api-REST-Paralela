@@ -1,4 +1,4 @@
-package com.start.models.voter;
+package com.api.models.voter;
 
 import java.util.List;
 
@@ -25,7 +25,7 @@ public class PollModel {
 		return Token;
 	}
 	public void setToken(Long token) {
-		this.Token = token + 4545 * 45;
+		this.Token = token;
 	}
 	public String getNombre() {
 		return Nombre;

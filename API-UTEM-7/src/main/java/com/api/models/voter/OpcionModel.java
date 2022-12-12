@@ -1,4 +1,4 @@
-package com.start.models.voter;
+package com.api.models.voter;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -19,7 +19,7 @@ public class OpcionModel {
 	private Long Numero_Opcion;
 	private String Descripcion;
 	private Long Cant_Votos;
-	@ManyToOne
+	@ManyToOne()
     @JoinColumn(name="Id_Poll", nullable=false)
 	private PollModel Id_Poll;
 	

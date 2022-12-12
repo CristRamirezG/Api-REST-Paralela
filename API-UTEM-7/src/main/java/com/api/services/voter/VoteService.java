@@ -1,4 +1,4 @@
-package com.start.services.voter;
+package com.api.services.voter;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -7,11 +7,11 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.start.models.voter.OpcionModel;
-import com.start.models.voter.PollModel;
-import com.start.models.voter.VoteModel;
-import com.start.repositories.voter.OpcionRepository;
-import com.start.repositories.voter.PollsRepository;
+import com.api.models.voter.OpcionModel;
+
+import com.api.models.voter.VoteModel;
+import com.api.repositories.voter.OpcionRepository;
+
 
 @Service
 public class VoteService {
@@ -21,6 +21,7 @@ public class VoteService {
 	}*/
 	@Autowired
 	OpcionRepository opcionRepository;
+	@Autowired
 	Utils utils;
 	private List<OpcionModel> salida;
 	
@@ -37,7 +38,7 @@ public class VoteService {
 		
 		while (Opciones_I.hasNext()) {
 			
-			if( Opciones_I.next().getId_Poll().getToken() == utils.Hash(voto.getToken()) ) {
+			if( Opciones_I.next().getId_Poll().getToken() == voto.getToken() ) {
 				
 			
 			votos = Opciones_I.next().getCant_Votos() + 1;

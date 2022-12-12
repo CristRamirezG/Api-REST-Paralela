@@ -1,4 +1,4 @@
-package com.start.models.voter;
+package com.api.models.voter;
 
 
 public class VoteModel {

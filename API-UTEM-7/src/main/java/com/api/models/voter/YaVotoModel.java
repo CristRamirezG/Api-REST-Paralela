@@ -1,4 +1,4 @@
-package com.start.models.voter;
+package com.api.models.voter;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -6,7 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 
 
 
@@ -19,7 +19,7 @@ public class YaVotoModel {
 	private Long id;
 	private String Correo;
 	
-	@ManyToOne
+	@OneToOne
     @JoinColumn(name="Id_Poll", nullable=false)
 	private PollModel Id_Poll;
 	

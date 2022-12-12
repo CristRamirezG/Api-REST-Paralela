@@ -1,4 +1,4 @@
-package com.start;
+package com.api;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(ApiUtem6Application.class);
+		return application.sources(ApiUtemJwtOauth23Application.class);
 	}
 
 }
